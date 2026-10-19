@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amine Socrate — Designer UX/UI & Stratégie Digitale</title>
+  <meta name="description" content="Portfolio d'Amine Socrate, Designer UX/UI & Stratégie Digitale. Recherche utilisateur, prototypage, design system, branding et intégration front-end." />
+  <meta property="og:title" content="Amine Socrate — Designer UX/UI & Stratégie Digitale" />
+  <meta property="og:description" content="Portfolio : UX/UI, refontes de sites, stratégie digitale et SEO. Projets Gerozone, Good Uniforme, ZA3ZA3 Gaming, Sportscore." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aminesocrate.github.io/" />
+  <meta property="og:image" content="https://aminesocrate.github.io/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://aminesocrate.github.io/" />
+  <meta name="theme-color" content="#0d99ff" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%230d99ff%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-family=%27Arial%27 font-weight=%27900%27 font-size=%2714%27 fill=%27white%27 text-anchor=%27middle%27%3EAS%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800;125,900&family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="brand" aria-label="Accueil">
+      <span class="crumb"><span class="crumb-dim">Amine Socrate /</span> Portfolio</span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <ul class="links">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#experience">Parcours</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li class="links-contact"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <span class="presence" title="Amine Socrate — en ligne">
+        <span class="avatar"><img src="assets/photo.jpg" alt="" onerror="this.remove()" />AS</span>
+      </span>
+      <button class="theme-btn" aria-label="Changer de thème">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 010 16z"/></svg>
+      </button>
+      <a href="#contact" class="share-btn">Contact</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" data-tool="move">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+
+      <div class="frame">
+        <div class="frame-top">
+          <div class="me">
+            <span class="me-pic">
+              <img src="assets/photo.jpg" alt="" onerror="this.remove()" />
+              AS
+            </span>
+            <span>AMINE SOCRATE <span class="me-tag">( Moi )</span></span>
+          </div>
+          <div class="chips">
+            <span>UI DESIGN</span>
+            <span>UX LEAD</span>
+          </div>
+        </div>
+
+        <div class="selection" id="selection">
+          <span class="guide" aria-hidden="true"></span>
+          <h1 class="big" id="bigTitle" spellcheck="false">Portfolio</h1>
+          <i class="handle tl"></i><i class="handle tr"></i><i class="handle bl"></i><i class="handle br"></i>
+          <span class="dims" id="dims">849 x 232</span>
+        </div>
+        <p class="sr-only">Amine Socrate — Designer UX/UI & Stratégie Digitale</p>
+      </div>
+
+      <div class="toolbar" role="toolbar" aria-label="Outils">
+        <button class="tool active" data-tool="move" aria-label="Déplacer">
+          <svg viewBox="0 0 24 24"><path d="M5 3l14 7-6 2-3 6z"/></svg><b></b>
+        </button>
+        <button class="tool" data-tool="frame" aria-label="Frame">
+          <svg viewBox="0 0 24 24"><path d="M8 3v18M16 3v18M3 8h18M3 16h18"/></svg><b></b>
+        </button>
+        <button class="tool" data-tool="rect" aria-label="Rectangle">
+          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1.5"/></svg><b></b>
+        </button>
+        <button class="tool" data-tool="pen" aria-label="Plume">
+          <svg viewBox="0 0 24 24"><path d="M4 20l3-9 6-6 6 6-6 6zM4 20l6-6"/><circle cx="11" cy="13" r="1.5"/></svg><b></b>
+        </button>
+        <button class="tool" data-tool="comment" aria-label="Commentaire">
+          <svg viewBox="0 0 24 24"><path d="M4 20v-8a8 8 0 1 1 8 8z"/></svg><b></b>
+        </button>
+        <button class="tool" data-tool="text" aria-label="Texte">
+          <svg viewBox="0 0 24 24"><path d="M5 5h14M12 5v15M9 20h6"/></svg><b></b>
+        </button>
+      </div>
+
+      <a href="#projets" class="scroll-hint">Voir mes projets ↓</a>
+    </section>
+
+    <!-- PROJETS — roue de cartes -->
+    <section id="projets" class="work">
+      <div class="work-head reveal">
+        <p class="eyebrow">01 — Projets</p>
+        <h2>Projets sélectionnés</h2>
+      </div>
+
+      <div class="work-body">
+      <div class="stage" id="stage" tabindex="0" aria-label="Projets — glisser ou utiliser les flèches">
+        <div class="ring" aria-hidden="true">
+          <svg viewBox="0 0 400 400" class="ring-text">
+            <circle cx="200" cy="200" r="178" class="ring-dash" />
+            <circle cx="200" cy="200" r="150" class="ring-dash" />
+            <circle cx="200" cy="200" r="122" class="ring-dash" />
+          </svg>
+          <span class="ring-me">▲<b>PROJECT</b><strong id="ringNum">01</strong><small>/ <span id="wTotal">04</span></small></span>
+        </div>
+        <div class="wheel" id="wheel"></div>
+      </div>
+
+      <div class="work-info" id="workInfo">
+        <div class="work-nav">
+          <button class="wheel-nav prev" aria-label="Projet précédent">←</button>
+          <div class="dots" id="wDots" role="tablist" aria-label="Choisir un projet"></div>
+          <button class="wheel-nav next" aria-label="Projet suivant">→</button>
+        </div>
+      </div>
+
+        <!-- Description façon commentaire Figma -->
+        <div class="comment" id="comment" aria-live="polite">
+          <span class="pin" aria-hidden="true">
+            <span class="avatar"><img src="assets/photo.jpg" alt="" onerror="this.remove()" />AS</span>
+          </span>
+          <div class="thread">
+            <header>
+              <span class="avatar"><img src="assets/photo.jpg" alt="" onerror="this.remove()" />AS</span>
+              <strong>Amine Socrate</strong>
+              <time id="wTime">à l'instant</time>
+              <span class="c-icons" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
+                <svg viewBox="0 0 24 24" class="check"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg>
+              </span>
+            </header>
+            <h3 id="wTitle"></h3>
+            <p class="desc" id="wDesc"></p>
+            <div class="c-buttons">
+              <button class="case-btn" id="wCase" hidden>Voir le projet →</button>
+              <a class="site-btn" id="wLink" target="_blank" rel="noopener">Voir le site <span aria-hidden="true">↗</span></a>
+              <a class="site-btn" id="wExtra" target="_blank" rel="noopener" hidden></a>
+            </div>
+            <a href="#contact" class="reply" aria-label="Me contacter à propos de ce projet">
+              <span>Répondre…</span>
+              <b aria-hidden="true">↑</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS — frame en auto layout -->
+    <section class="stats-frame reveal" aria-label="Chiffres clés">
+      <span class="frame-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l4 4-4 4-4-4zM12 13l4 4-4 4-4-4zM7 8l4 4-4 4-4-4zM17 8l4 4-4 4-4-4z"/></svg>Chiffres clés <em>Auto layout</em></span>
+      <div class="stats">
+        <div class="stat"><strong data-count="4" data-suffix="+">0</strong><span>expériences agence & startup</span></div>
+        <i class="gap" aria-hidden="true"><span>32</span></i>
+        <div class="stat"><strong data-count="4">0</strong><span>diplômes & certifications, dont RNCP 7</span></div>
+        <i class="gap" aria-hidden="true"><span>32</span></i>
+        <div class="stat"><strong data-count="2">0</strong><span>pays — France & Maroc</span></div>
+        <i class="gap" aria-hidden="true"><span>32</span></i>
+        <div class="stat"><strong data-count="3">0</strong><span>langues — FR, EN, AR</span></div>
+      </div>
+    </section>
+
+    <!-- MÉTHODE — tableau FigJam -->
+    <section class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 — Méthode</p>
+        <h2>Ma façon de travailler</h2>
+      </div>
+      <div class="board reveal">
+        <span class="board-tag">FigJam · methode.jam</span>
+        <div class="stickies">
+          <article class="sticky s-yellow">
+            <span class="n">01</span><h4>Comprendre</h4>
+            <p>Recherche utilisateur, entretiens, analyse des besoins et des objectifs business.</p>
+            <small>Amine</small>
+          </article>
+          <span class="arrow" aria-hidden="true"><svg viewBox="0 0 64 32"><path d="M4 24C20 4 44 4 58 18"/><path d="M49 13l9 5-10 4"/></svg></span>
+          <article class="sticky s-green">
+            <span class="n">02</span><h4>Structurer</h4>
+            <p>Parcours utilisateurs, architecture de l'information et wireframes.</p>
+            <small>Amine</small>
+          </article>
+          <span class="arrow" aria-hidden="true"><svg viewBox="0 0 64 32"><path d="M4 8C20 28 44 28 58 14"/><path d="M48 18l10-4-3 10"/></svg></span>
+          <article class="sticky s-blue">
+            <span class="n">03</span><h4>Concevoir</h4>
+            <p>UI haute-fidélité, design system et prototypes interactifs sous Figma.</p>
+            <small>Amine</small>
+          </article>
+          <span class="arrow" aria-hidden="true"><svg viewBox="0 0 64 32"><path d="M4 24C20 4 44 4 58 18"/><path d="M49 13l9 5-10 4"/></svg></span>
+          <article class="sticky s-pink">
+            <span class="n">04</span><h4>Livrer & mesurer</h4>
+            <p>Intégration front-end, SEO, tests et itérations basées sur les données.</p>
+            <small>Amine</small>
+          </article>
+        </div>
+        <span class="mp-cursor" id="mpCursor" aria-hidden="true">
+          <span class="mp-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 2l16 9-7 2-3 7z"/></svg>
+            <span class="mp-hand">👋</span>
+          </span>
+          <b><span class="mp-name">Recruteur</span><span class="mp-hi">Salut ! Bienvenue 👋</span></b>
+        </span>
+      </div>
+    </section>
+
+    <!-- PARCOURS — historique des versions -->
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 — Parcours</p>
+        <h2>Expérience & formation</h2>
+      </div>
+      <div class="history reveal">
+        <header class="h-head">
+          <span class="h-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Historique des versions
+          </span>
+          <div class="h-tabs" role="tablist" aria-label="Parcours">
+            <button role="tab" aria-selected="true" data-tab="exp">Expérience</button>
+            <button role="tab" aria-selected="false" data-tab="edu">Formation</button>
+          </div>
+        </header>
+        <ol class="h-list" data-panel="exp">
+          <li class="current">
+            <span class="h-dot"></span>
+            <div><h4>Assistant UX/UI & marketing digital</h4><p>ZA3ZA3 Gaming · Brest</p></div>
+            <time>03/2026 – 06/2026</time>
+          </li>
+          <li>
+            <span class="h-dot"></span>
+            <div><h4>UI/UX Designer & Growth Marketing</h4><p>Gerozone · Remote</p></div>
+            <time>11/2025 – 03/2026</time>
+          </li>
+          <li>
+            <span class="h-dot"></span>
+            <div><h4>Designer UX/UI & Développeur Front-end</h4><p>ARTEKA · Amiens</p></div>
+            <time>08/2024 – 10/2024</time>
+          </li>
+          <li>
+            <span class="h-dot"></span>
+            <div><h4>Designer UX/UI & Développeur Front-end</h4><p>DARYUN · Casablanca</p></div>
+            <time>05/2024 – 07/2024</time>
+          </li>
+        </ol>
+        <ol class="h-list" data-panel="edu" hidden>
+          <li class="current">
+            <span class="h-dot"></span>
+            <div><h4>Expert en Stratégie Digitale</h4><p>Titre certifié RNCP niveau 7 (Bac+5)</p></div>
+            <time>2026</time>
+          </li>
+          <li>
+            <span class="h-dot"></span>
+            <div><h4>Mastère Lead UX</h4><p>Digital Campus · Montpellier</p></div>
+            <time>2024 – 2026</time>
+          </li>
+          <li>
+            <span class="h-dot"></span>
+            <div><h4>Chef de projet digital</h4><p>Digital Campus · Toulouse</p></div>
+            <time>2024</time>
+          </li>
+          <li>
+            <span class="h-dot"></span>
+            <div><h4>Technicien spécialisé en développement informatique</h4><p>ISTA · Casablanca</p></div>
+            <time>2022</time>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES — fenêtre Figma avec calques -->
+    <section id="competences" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 — Compétences</p>
+        <h2>Boîte à outils</h2>
+      </div>
+      <div class="fwin reveal">
+        <div class="fwin-bar">
+          <span class="win-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>competences.fig</span>
+          <span></span>
+        </div>
+        <div class="fwin-body">
+          <aside class="layers">
+            <p class="layers-title">Calques</p>
+            <ul id="skillLayers" role="tablist" aria-label="Catégories de compétences"></ul>
+          </aside>
+          <div class="fcanvas">
+            <div class="sk-frame" id="skillFrame" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT — boîte de dialogue « Partager » -->
+    <section id="contact" class="section contact">
+      <div class="section-head reveal">
+        <p class="eyebrow">05 — Contact</p>
+        <h2>Un projet, un poste, une idée ?<br />Parlons-en.</h2>
+      </div>
+      <div class="share reveal">
+        <header class="share-head">
+          <h3>Partager « Portfolio — Amine Socrate »</h3>
+        </header>
+        <div class="invite">
+          <span class="invite-field">aminesocrate11@gmail.com</span>
+          <a class="invite-btn" href="mailto:aminesocrate11@gmail.com">Inviter</a>
+        </div>
+        <p class="share-sub">Personnes ayant accès</p>
+        <ul class="access">
+          <li>
+            <span class="avatar"><img src="assets/photo.jpg" alt="" onerror="this.remove()" />AS</span>
+            <div><b>Amine Socrate (moi)</b><small>Designer UX/UI & Stratégie Digitale</small></div>
+            <em>propriétaire</em>
+          </li>
+          <li>
+            <span class="avatar a-in">in</span>
+            <div><b>LinkedIn</b><small>mohamed-amine-socrate-idrissi</small></div>
+            <a href="https://www.linkedin.com/in/mohamed-amine-socrate-idrissi/" target="_blank" rel="noopener">Voir le profil ↗</a>
+          </li>
+          <li>
+            <span class="avatar a-ph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-3 2a11 11 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg></span>
+            <div><b>Téléphone</b><small>+33 7 77 70 23 57</small></div>
+            <a href="tel:+33777702357">Appeler</a>
+          </li>
+          <li>
+            <span class="avatar a-loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.3-7-11a7 7 0 0114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><b>France — Maroc</b><small>Disponible pour un poste en UX/UI & stratégie digitale</small></div>
+            <span class="dispo">● Disponible</span>
+          </li>
+        </ul>
+        <footer class="share-foot">
+          <button class="copy-btn" id="copyMail" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"/></svg>
+            <span>Copier l'e-mail</span>
+          </button>
+          <a href="assets/CV_Amine_SOCRATE.pdf" class="cv-dl" download>Télécharger le CV</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Amine Socrate — Designé & codé avec soin.</p>
+  </footer>
+
+  <!-- Vue projet -->
+  <dialog class="case" id="case" aria-labelledby="caseTitle">
+    <div class="case-top">
+      <span class="case-file" id="caseFile"></span>
+      <button class="case-close" id="caseClose" aria-label="Fermer">✕</button>
+    </div>
+    <div class="case-body">
+      <header class="case-head">
+        <img id="caseLogo" alt="" />
+        <div>
+          <p class="meta" id="caseMeta"></p>
+          <h2 id="caseTitle"></h2>
+        </div>
+      </header>
+      <p class="case-context" id="caseContext"></p>
+
+      <h4 class="det-title">Détails</h4>
+      <dl class="case-details" id="caseDetails"></dl>
+
+      <h4>Mon rôle</h4>
+      <ul class="case-role" id="caseRole"></ul>
+      <ul class="tags" id="caseTags"></ul>
+
+      <div class="case-actions">
+        <a id="casePage" class="case-site case-page">Lire l'étude de cas →</a>
+        <a id="caseLink" class="case-site" target="_blank" rel="noopener">Voir le site <span aria-hidden="true">↗</span></a>
+        <a id="caseExtra" class="case-site" target="_blank" rel="noopener" hidden></a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Image agrandie">
+    <button class="lb-close" aria-label="Fermer">✕</button>
+    <button class="lb-prev" aria-label="Image précédente">←</button>
+    <figure><img id="lbImg" alt="" /><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-next" aria-label="Image suivante">→</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
