@@ -28,7 +28,8 @@
       });
     });
     document.querySelectorAll(".lang-btn").forEach(b => {
-      b.textContent = en ? "FR" : "EN";
+      b.dataset.lang = lang; // la pastille bleue glisse sur la langue active
+      b.innerHTML = `<span${en ? "" : ' class="on"'}>FR</span><span${en ? ' class="on"' : ""}>EN</span>`;
       b.setAttribute("aria-label", en ? "Passer en français" : "Switch to English");
       b.title = b.getAttribute("aria-label");
     });
