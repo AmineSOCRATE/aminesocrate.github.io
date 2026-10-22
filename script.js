@@ -92,7 +92,7 @@ const projects = [
     gallery: [
       { src: "assets/projets/gooduniforme/apres-accueil.jpg", caption: "Nouvelle page d'accueil", pos: "top" },
       { src: "assets/projets/gooduniforme/apres-boutique.jpg", caption: "E-boutique — catalogue filtrable", pos: "top" },
-      { src: "assets/projets/gooduniforme/apres-produit.jpg", caption: "Page produit + devis", pos: "top" },
+      { src: "assets/projets/gooduniforme/apres-produit.jpg", caption: "Page produit — configurateur + devis", pos: "top" },
       { src: "assets/projets/gooduniforme/apres-categorie.jpg", caption: "Catégorie Hôtellerie", pos: "top" },
       { src: "assets/projets/gooduniforme/apres-realisations.jpg", caption: "Nos réalisations", pos: "top" },
       { src: "assets/projets/gooduniforme/avant-boutique.jpg", caption: "Avant — l'ancienne E-boutique, vide", pos: "top" }
