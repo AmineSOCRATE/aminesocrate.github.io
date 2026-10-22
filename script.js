@@ -75,18 +75,18 @@ const projects = [
     title: "Good Uniforme — Refonte & SEO",
     meta: "Vêtements professionnels · Casablanca · 2026",
     time: "oct. 2026",
-    status: "En cours",
+    status: "En ligne",
     page: "projets/gooduniforme.html",
     url: "https://gooduniforme.ma/",
-    desc: "Refonte du site de Good Uniforme, spécialiste des vêtements professionnels personnalisés au Maroc, puis stratégie de référencement naturel (SEO). Projet en cours.",
+    desc: "Refonte du site de Good Uniforme, spécialiste des vêtements professionnels personnalisés au Maroc, puis stratégie de référencement naturel (SEO). Le nouveau site est en ligne.",
     tags: ["Refonte web", "UX/UI", "SEO"],
-    poster: () => `<div class="poster p-good"><div class="row"><small>Casablanca</small><small class="live">${t("En cours", "In progress")}</small></div><div class="chevrons"><i></i><i></i><i></i></div><div class="p-good-txt"><img src="assets/projets/gooduniforme/logo-blanc.png" alt=""><small class="cs-flag">${t("Étude de cas →", "Case study →")}</small></div></div>`,
+    poster: () => `<div class="poster p-good"><div class="row"><small>Casablanca</small><small class="live">${t("En ligne", "Live")}</small></div><div class="chevrons"><i></i><i></i><i></i></div><div class="p-good-txt"><img src="assets/projets/gooduniforme/logo-blanc.png" alt=""><small class="cs-flag">${t("Étude de cas →", "Case study →")}</small></div></div>`,
     // Vue projet
     logo: "assets/projets/gooduniforme/icone.png",
     context: "Good Uniforme conçoit des vêtements professionnels personnalisés au Maroc : tenues de travail, blouses médicales, uniformes scolaires et textile publicitaire. L'enjeu : un site plus moderne et plus clair, et une meilleure visibilité sur Google.",
     role: [
-      "Refonte complète du site sous WordPress / Elementor (UX/UI) — en cours",
-      "Référencement naturel (SEO) — prochaine étape"
+      "Refonte complète du site sous WordPress / Elementor (UX/UI) — en ligne",
+      "Référencement naturel (SEO) — en cours"
     ],
     skills: ["UX/UI", "WordPress", "Elementor", "Claude (IA)", "Refonte web", "SEO"],
     gallery: [
@@ -101,13 +101,13 @@ const projects = [
       title: "Good Uniforme — Redesign & SEO",
       meta: "Workwear · Casablanca · 2026",
       time: "Oct 2026",
-      status: "In progress",
-      desc: "Redesign of the website of Good Uniforme, a specialist in custom workwear in Morocco, followed by an SEO strategy. Ongoing project.",
+      status: "Live",
+      desc: "Redesign of the website of Good Uniforme, a specialist in custom workwear in Morocco, followed by an SEO strategy. The new site is live.",
       tags: ["Web redesign", "UX/UI", "SEO"],
       context: "Good Uniforme designs custom workwear in Morocco: work clothing, medical coats, school uniforms and promotional textiles. The goal: a more modern, clearer website and better visibility on Google.",
       role: [
-        "Full website redesign in WordPress / Elementor (UX/UI) — in progress",
-        "Search engine optimization (SEO) — next step"
+        "Full website redesign in WordPress / Elementor (UX/UI) — live",
+        "Search engine optimization (SEO) — in progress"
       ],
       skills: ["UX/UI", "WordPress", "Elementor", "Claude (AI)", "Web redesign", "SEO"]
     }
