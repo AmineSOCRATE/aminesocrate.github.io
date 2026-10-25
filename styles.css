@@ -501,6 +501,24 @@ html { scroll-padding-top: 90px; } /* les ancres ne passent pas sous le header *
 .p-za3-txt b { font: 900 .95rem "Archivo", sans-serif; font-stretch: 125%; letter-spacing: .02em; }
 .p-za3-txt small { color: #e9f2e4; opacity: .7; text-transform: none; letter-spacing: .04em; }
 
+/* AsianFest : badge sur un soleil rouge, deux portes qui s'ouvrent et se referment devant */
+.p-asian { background: radial-gradient(circle at 50% 46%, #5a1410, #120e12 66%); color: #f5ecdd; }
+.p-asian > * { position: relative; }
+.p-asian .live { display: flex; align-items: center; gap: 5px; color: #f3b23e; }
+.af-gate { position: relative; width: 62%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; box-shadow: 0 0 50px #dc1d1588; }
+.af-gate img { width: 100%; display: block; }
+.af-gate::before, .af-gate::after { /* les deux portes */
+  content: ""; position: absolute; top: 0; bottom: 0; width: 50%; background: #dc1d15;
+  animation: afDoorL 4.8s cubic-bezier(.6, 0, .3, 1) infinite;
+}
+.af-gate::before { left: 0; border-right: 1px solid #a61f16; }
+.af-gate::after { right: 0; border-left: 1px solid #a61f16; animation-name: afDoorR; }
+@keyframes afDoorL { 0%, 12%, 88%, 100% { transform: none; } 35%, 70% { transform: translateX(-101%); } }
+@keyframes afDoorR { 0%, 12%, 88%, 100% { transform: none; } 35%, 70% { transform: translateX(101%); } }
+.p-asian-txt { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.p-asian-txt b { font: 900 .95rem "Archivo", sans-serif; font-stretch: 125%; letter-spacing: .02em; }
+.p-asian-txt small { color: #f3b23e; text-transform: none; letter-spacing: .04em; }
+
 .p-good { background: linear-gradient(160deg, #0f1a3d, #060b1f); color: #fff; }
 .p-good .live { display: flex; align-items: center; gap: 5px; color: #ff8a3d; }
 .p-good .live::before {
@@ -968,7 +986,7 @@ footer { border-top: 1px solid var(--line); padding-block: 28px; color: var(--mu
 .reveal.visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
-  .blob, .frame-top, .selection, .handle, .dims, .toolbar, .ring-text, .p-gero .orb, .p-za3::before, .p-logo-wrap, .p-logo-wrap::after, .words i, .chevrons i, .p-good .live::before, .sp-logo, .sp-orbit i, .mp-cursor, .sk-frame, .sk-chip, .h-list { animation: none; }
+  .blob, .frame-top, .selection, .handle, .dims, .toolbar, .ring-text, .p-gero .orb, .p-za3::before, .p-logo-wrap, .p-logo-wrap::after, .words i, .chevrons i, .p-good .live::before, .af-gate::before, .af-gate::after, .sp-logo, .sp-orbit i, .mp-cursor, .sk-frame, .sk-chip, .h-list { animation: none; }
 }
 
 /* RESPONSIVE */
@@ -989,6 +1007,8 @@ footer { border-top: 1px solid var(--line); padding-block: 28px; color: var(--mu
 
   .p-za3-txt b { font-size: .62rem; }
   .p-za3-txt small { font-size: .5rem; }
+  .p-asian-txt b { font-size: .62rem; }
+  .p-asian-txt small { font-size: .5rem; }
   .ring-me strong { font-size: 2.2rem; margin-top: 6px; }
   .ring-me b { font-size: .8rem; }
   .sel { inset: -6px; }

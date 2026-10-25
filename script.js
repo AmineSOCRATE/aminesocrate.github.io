@@ -228,12 +228,51 @@ const projects = [
       skills: ["UX/UI", "WordPress", "Elementor", "Claude (AI)", "Digital marketing", "Branding", "Social media"],
       details: [["Client", "ZA3ZA3 Gaming"], ["Location", "Brest"], ["Role", "UX/UI & marketing assistant"], ["Period", "Mar – Jun 2026"], ["Website", "WordPress · Elementor"], ["Concept", "Gaming snack bar"]]
     }
+  },
+  {
+    id: "asianfest",
+    title: "AsianFest — Site vitrine K-pop",
+    meta: "Événementiel · DARYUN · Casablanca",
+    time: "en cours",
+    status: "En cours",
+    url: "",
+    extra: { label: "Démo de l'animation", url: "projets/asianfest.html" },
+    desc: "Conception UX/UI du site vitrine d'un événement K-pop pour AsianFest, et création des supports promotionnels : affiches et visuels. Le site est en cours, une démo de l'animation d'entrée est disponible.",
+    tags: ["UX/UI", "Événementiel", "Print"],
+    poster: () => `<div class="poster p-asian"><div class="row"><small>Casablanca</small><small class="live">${t("En cours", "In progress")}</small></div><div class="af-gate"><img src="assets/projets/asianfest/logo.svg" alt=""></div><div class="p-asian-txt"><b>AsianFest</b><small>${t("Démo du portail →", "Gate demo →")}</small></div></div>`,
+    // Vue projet
+    logo: "assets/projets/asianfest/logo.svg",
+    context: "AsianFest organise des événements autour des cultures asiatiques au Maroc depuis 2014. Pour son événement K-pop, il fallait un site vitrine qui donne envie de venir, et des supports pour en faire la promotion. Le site est encore en cours : à l'entrée, un portail s'ouvre au scroll pour faire entrer le visiteur dans l'univers AsianFest.",
+    role: [
+      "Conception UX/UI d'un site vitrine pour un événement K-pop",
+      "Animation d'entrée : un portail qui s'ouvre au scroll (GSAP)",
+      "Création des supports promotionnels : affiches et visuels"
+    ],
+    skills: ["UX/UI", "Figma", "GSAP", "HTML/CSS/JS", "Affiches", "Visuels"],
+    details: [["Agence", "DARYUN"], ["Client", "AsianFest"], ["Lieu", "Casablanca"], ["Rôle", "Designer UX/UI"], ["Livrables", "Site vitrine, affiches, visuels"], ["Statut", "En cours"]],
+    en: {
+      title: "AsianFest — K-pop showcase website",
+      meta: "Events · DARYUN · Casablanca",
+      time: "in progress",
+      status: "In progress",
+      extra: { label: "Animation demo", url: "projets/asianfest.html" },
+      desc: "UX/UI design of a showcase website for an AsianFest K-pop event, plus promotional materials: posters and visuals. The site is in progress; a demo of the entrance animation is available.",
+      tags: ["UX/UI", "Events", "Print"],
+      context: "AsianFest has organized events around Asian cultures in Morocco since 2014. For its K-pop event, it needed a showcase website that makes people want to come, and materials to promote it. The site is still in progress: on arrival, a gate opens as you scroll and brings the visitor into the AsianFest world.",
+      role: [
+        "UX/UI design of a showcase website for a K-pop event",
+        "Entrance animation: a gate that opens as you scroll (GSAP)",
+        "Promotional materials: posters and visuals"
+      ],
+      skills: ["UX/UI", "Figma", "GSAP", "HTML/CSS/JS", "Posters", "Visuals"],
+      details: [["Agency", "DARYUN"], ["Client", "AsianFest"], ["Location", "Casablanca"], ["Role", "UX/UI Designer"], ["Deliverables", "Website, posters, visuals"], ["Status", "In progress"]]
+    }
   }
 ];
 
 const stage = document.getElementById("stage");
 const wheel = document.getElementById("wheel");
-const SLOTS = 12; // cartes réparties sur un cercle complet (projets répétés)
+const SLOTS = projects.length * Math.max(2, Math.round(12 / projects.length)); // cartes réparties sur un cercle complet (projets répétés, ~12 cartes)
 const STEP = 360 / SLOTS;
 const mod = (n, m) => ((n % m) + m) % m;
 let rot = 0;
